@@ -1,0 +1,2 @@
+GET https://api.todoist.com/rest/v2/tasks
+Authorization: Bearer 6b5b2446b03710e6a8b76966cd4cbce86d99839c
