@@ -3,5 +3,5 @@ export type Todo = {
   content: string;
   description: string;
   is_completed: boolean;
-  order: number;
+  order?: number;
 };

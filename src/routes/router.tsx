@@ -5,7 +5,7 @@ import React from "react";
 // import Contact from "../pages/Contact";
 import Layout from "../component/Layout";
 import Todos from "../pages/Todos";
-import Todo from "../component/Todo";
+import Page405 from "../component/Page405";
 
 const Home = React.lazy(() => import("../pages/Home"));
 const About = React.lazy(() => import("../pages/About"));
@@ -37,8 +37,16 @@ export const router = createBrowserRouter([
         element: <Todos />,
       },
       {
-        path: "/todo/:id",
-        element: <Todo />,
+        path: "/todos/:id",
+        element: <Todos />,
+      },
+      {
+        path: "/todos/add",
+        element: <Todos />,
+      },
+      {
+        path: "/*",
+        element: <Page405 />,
       },
     ],
   },

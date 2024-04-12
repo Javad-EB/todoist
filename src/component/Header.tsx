@@ -24,12 +24,12 @@ const Header = () => {
           <ul
             // eslint-disable-next-line jsx-a11y/no-noninteractive-tabindex
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu dropdown-content menu-sm z-[1] mt-3 w-52 rounded-box bg-base-100 p-2 shadow"
           >
             <li>
               <Link to={"/home"}>Home</Link>
             </li>
-            <li>
+            {/* <li>
               <details>
                 <summary>Todos</summary>
                 <ul className="p-2">
@@ -41,6 +41,9 @@ const Header = () => {
                   </li>
                 </ul>
               </details>
+            </li> */}
+            <li>
+              <Link to={"/todos"}>Todos</Link>
             </li>
             <li>
               <Link to={"/contact"}>Contact</Link>
@@ -59,7 +62,7 @@ const Header = () => {
           <li>
             <Link to={"/home"}>Home</Link>
           </li>
-          <li>
+          {/* <li>
             <details>
               <summary>Todos</summary>
               <ul className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-t-none">
@@ -71,6 +74,9 @@ const Header = () => {
                 </li>
               </ul>
             </details>
+          </li> */}
+          <li>
+            <Link to={"/todos"}>Todos</Link>
           </li>
           <li>
             <Link to={"/contact"}>Contact</Link>
