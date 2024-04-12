@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { Todo } from "../types/todo";
 
-const TodoCard = ({ todo }) => {
+const TodoCard = ({ todo }: { todo: Todo }) => {
   const navigate = useNavigate();
   const handleEdit = (todo: Todo) => {
     navigate(`/todos/${todo.id}`);

@@ -27,10 +27,10 @@ const EditTodo = ({ add }: { add: boolean }) => {
       await queryClient.cancelQueries({ queryKey: ["Todo"] });
       const previousTodos = queryClient.getQueryData(["Todo"]);
       if (add) {
-        queryClient.setQueryData(["Todo"], (old) => [...old, newTodo]);
+        queryClient.setQueryData(["Todo"], (old: Todo[]) => [...old, newTodo]);
       } else {
-        queryClient.setQueryData(["Todo"], (old) =>
-          old.map((item) => {
+        queryClient.setQueryData(["Todo"], (old: Todo) =>
+          old.map((item: Todo) => {
             if (item.id === id) return { ...newTodo };
             return item;
           }),

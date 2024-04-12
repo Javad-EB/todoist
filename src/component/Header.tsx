@@ -29,19 +29,6 @@ const Header = () => {
             <li>
               <Link to={"/home"}>Home</Link>
             </li>
-            {/* <li>
-              <details>
-                <summary>Todos</summary>
-                <ul className="p-2">
-                  <li>
-                    <Link to={"/todos"}>Todos</Link>
-                  </li>
-                  <li>
-                    <Link to={"/todos"}>My Todos</Link>
-                  </li>
-                </ul>
-              </details>
-            </li> */}
             <li>
               <Link to={"/todos"}>Todos</Link>
             </li>
@@ -62,19 +49,6 @@ const Header = () => {
           <li>
             <Link to={"/home"}>Home</Link>
           </li>
-          {/* <li>
-            <details>
-              <summary>Todos</summary>
-              <ul className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-t-none">
-                <li>
-                  <Link to={"/todos"}>Todos</Link>
-                </li>
-                <li>
-                  <Link to={"/todos"}>Completed</Link>
-                </li>
-              </ul>
-            </details>
-          </li> */}
           <li>
             <Link to={"/todos"}>Todos</Link>
           </li>
